@@ -7,7 +7,7 @@ def get_covid_info_json(country: str):
     query = {"country": f"{country}"}
     headers = {
             'x-rapidapi-host': "covid-193.p.rapidapi.com",
-            'x-rapidapi-key': "f349d1ec63msh34618b0f4aa61f0p1a8188jsne72bc4735b2a"
+            'x-rapidapi-key': "YOUR_KEY_HERE"
     }
     response = requests.request("GET", url, headers=headers, params=query)
     return response.json()
